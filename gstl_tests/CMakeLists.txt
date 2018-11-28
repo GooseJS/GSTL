@@ -1,0 +1,4 @@
+add_executable(gstl_tests StringTests MathTests)
+
+target_link_libraries(gstl_tests gtest gtest_main)
+target_link_libraries(gstl_tests GSTL)

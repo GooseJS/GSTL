@@ -1,0 +1,1 @@
+add_library(GSTL SHARED gstl/collections/String gstl/math/Vec2 gstl/math/Types gstl/Math)
