@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "collections/String.h"
+#include "gstl/collections/String.h"
 
 TEST(StringTests, StringConstruct_VOID)
 {

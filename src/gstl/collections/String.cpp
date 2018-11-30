@@ -27,6 +27,14 @@ namespace GSTL
         strcpy(_data, string.c_str());
     }
 
+    String::String(const String &string)
+    {
+        _len = string.size();
+        _maxLen = _len;
+        _data = new char[_len + 1];
+        strcpy(_data, string.c_str());
+    }
+
     void String::append(const char* s)
     {
         size_t newLen = _len + strlen(s);

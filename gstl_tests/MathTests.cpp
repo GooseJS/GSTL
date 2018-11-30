@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "math/Vec2.h"
+#include "gstl/math/Vec2.h"
 
 TEST(Vec2Test, Vec2Construct_VOID_FLOAT)
 {

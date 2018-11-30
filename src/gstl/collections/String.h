@@ -14,6 +14,7 @@ namespace GSTL
         String();
         explicit String(const char* s);
         String(String &s);
+        String(const String &s);
         ~String();
 
         void resize(size_t maxLen);
@@ -26,7 +27,7 @@ namespace GSTL
 
         String substring(int start, int end);
 
-        const inline size_t size() { return _len; }
-        const inline char* c_str() { return _data; }
+        const inline size_t size() const { return _len; }
+        const inline char* c_str() const { return _data; }
     };
 }
