@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Download and unpack googletest at configure time
 if (GSTL_NO_BUILD_TESTS)
+elseif()
 configure_file(GTestCMakeLists.txt.in googletest-download/CMakeLists.txt)
 execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
         RESULT_VARIABLE result
