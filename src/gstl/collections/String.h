@@ -31,9 +31,7 @@ namespace GSTL
         const inline size_t size() const { return _len; }
         const inline char* c_str() const { return _data; }
 
-        inline bool operator<(String s) { return strcmp(c_str(), s.c_str()) == 0; }
-        inline bool operator>(String s) { return strcmp(c_str(), s.c_str()) != 0; }
-        inline bool operator>(const String& s) { return strcmp(c_str(), s.c_str()) != 0; }
-        inline bool operator<(const String& s) { return strcmp(c_str(), s.c_str()) == 0; }
+        inline bool operator<(const String& s) const { return strcmp(c_str(), s.c_str()) != 0; }
+        inline bool operator>(const String& s) const { return strcmp(c_str(), s.c_str()) == 0; }
     };
 }
